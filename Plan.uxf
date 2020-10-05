@@ -26,6 +26,7 @@
 + dodajAdresata () : void
 + wyswietlWszystkichAdresatow () : void
 + usunAdresata () : void
++ edytujAdresata () : void
 + wybierzOpcjeZMenuGlownego () : Char
 + wybierzOpcjeZMenuUzytkownika () : Char
 
@@ -141,12 +142,15 @@ AdresatMenedzer ()
 - wyswietlIloscWyszukanychAdresatow () : Void
 - wyswietlDaneAdresata () : Adresat
 - podajIdWybranegoAdresata () : Int
+- wybierzOpcjeZMenuEdycja () : Char
+- zaktualizujDaneWybranegoAdresata () : Void
 
 + dodajAdresata () : Void
 + wyszukajAdresatowPoImieniu () : Void
 + wyszukajAdresatowPoNazwisku () : Void
 + wyswietlWszystkichAdresatow () : Void
-+ usunAdresata () : Void</panel_attributes>
++ usunAdresata () : Void
++ edytujAdresata () : Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -184,7 +188,6 @@ AdresatMenedzer ()
 + PlikZAdresatami ()
 
 - czyPlikJestPusty () : Bool
-- zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami () : Int
 - pobierzDaneAdresata () : Adresat
 - usunPlik () : Void
@@ -195,7 +198,10 @@ AdresatMenedzer ()
 + wczytajAdresatowZPliku () : vector &lt;Adresat&gt;
 + pobierzIdOstatniegoAdresata () : Int
 + ustawIdOstatniegoAdresata () : Void
-+ usunWybranegoAdresataZPliku () : Void</panel_attributes>
++ zwrocNumerLiniiSzukanegoAdresata () : Int
++ zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
++ usunWybranaLinieWPliku () : Void
++ edytujWybranaLinieWPliku () : Void</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
