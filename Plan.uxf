@@ -26,6 +26,7 @@
 + dodajAdresata () : void
 + wyswietlWszystkichAdresatow () : void
 + usunAdresata () : void
++ edytujAdresata () : void
 + wybierzOpcjeZMenuGlownego () : Char
 + wybierzOpcjeZMenuUzytkownika () : Char
 
@@ -85,13 +86,10 @@
       <w>420</w>
       <h>200</h>
     </coordinates>
-    <panel_attributes>PlikZUzytkownikami
---
-- NAZWA_PLIKU_Z_UZYTKOWNIKAMI : String
+    <panel_attributes>PlikZUzytkownikami : public PlikTekstowy
 --
 + PlikZUzytkownikami ()
 
-- czyPlikJestPusty () : Bool
 - zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami () : String
 - pobierzDaneUzytkownika () : Uzytkownik
 
@@ -141,12 +139,15 @@ AdresatMenedzer ()
 - wyswietlIloscWyszukanychAdresatow () : Void
 - wyswietlDaneAdresata () : Adresat
 - podajIdWybranegoAdresata () : Int
+- wybierzOpcjeZMenuEdycja () : Char
+- zaktualizujDaneWybranegoAdresata () : Void
 
 + dodajAdresata () : Void
 + wyszukajAdresatowPoImieniu () : Void
 + wyszukajAdresatowPoNazwisku () : Void
 + wyswietlWszystkichAdresatow () : Void
-+ usunAdresata () : Void</panel_attributes>
++ usunAdresata () : Void
++ edytujAdresata () : Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -176,15 +177,13 @@ AdresatMenedzer ()
       <w>420</w>
       <h>350</h>
     </coordinates>
-    <panel_attributes>PlikZAdresatami
+    <panel_attributes>PlikZAdresatami : public PlikTekstowy
 --
-- NAZWA_PLIKU_Z_ADRESATAMI : String
+- NAZWA_TYMCZASOWEGO_PLIKU_Z_ADRESATAMI : String
 - idOstatniegoAdresata : Int
 --
 + PlikZAdresatami ()
 
-- czyPlikJestPusty () : Bool
-- zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami () : Int
 - pobierzDaneAdresata () : Adresat
 - usunPlik () : Void
@@ -195,7 +194,25 @@ AdresatMenedzer ()
 + wczytajAdresatowZPliku () : vector &lt;Adresat&gt;
 + pobierzIdOstatniegoAdresata () : Int
 + ustawIdOstatniegoAdresata () : Void
-+ usunWybranegoAdresataZPliku () : Void</panel_attributes>
++ zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
++ usunWybranegoAdresataZPliku () : Void
++ edytujWybranegoAdresataWPliku () : Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>90</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PlikTekstowy
+--
+- NAZWAPLIKU : String
+- czyPlikJestPusty () : Bool
+--
++ PlikTekstowy ()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
