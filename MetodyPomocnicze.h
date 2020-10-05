@@ -16,6 +16,7 @@ public:
     static int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     static string pobierzLiczbe(string tekst, int pozycjaZnaku);
     static char wczytajZnak();
+    static int wczytajLiczbeCalkowita();
 };
 
 #endif // METODYPOMOCNICZE_H
