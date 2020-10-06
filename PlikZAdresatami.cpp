@@ -175,11 +175,12 @@ void PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata() {
         idOstatniegoAdresata = 0;
 }
 
-void PlikZAdresatami::edytujWybranegoAdresataWPliku(Adresat adresat, string liniaZDanymiAdresata) {
+void PlikZAdresatami::edytujWybranegoAdresataWPliku(Adresat adresat) {
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
     string wczytanaLinia = "";
     int numerWczytanejLinii = 1;
     int idAdresata = adresat.pobierzId();
+    string liniaZDanymiAdresata = zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);
 
     odczytywanyPlikTekstowy.open(NAZWA_PLIKU.c_str(), ios::in);
     tymczasowyPlikTekstowy.open(NAZWA_TYMCZASOWEGO_PLIKU_Z_ADRESATAMI.c_str(), ios::out | ios::app);
