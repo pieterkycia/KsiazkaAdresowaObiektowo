@@ -186,6 +186,7 @@ AdresatMenedzer ()
 
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami () : Int
 - pobierzDaneAdresata () : Adresat
+- zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
 - usunPlik () : Void
 - zmienNazwePliku () : Void
 - pobierzZPlikuIdOstatniegoAdresata () : Void
@@ -194,7 +195,6 @@ AdresatMenedzer ()
 + wczytajAdresatowZPliku () : vector &lt;Adresat&gt;
 + pobierzIdOstatniegoAdresata () : Int
 + ustawIdOstatniegoAdresata () : Void
-+ zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami () : String
 + usunWybranegoAdresataZPliku () : Void
 + edytujWybranegoAdresataWPliku () : Void</panel_attributes>
     <additional_attributes/>

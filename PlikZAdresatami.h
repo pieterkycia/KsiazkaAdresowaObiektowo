@@ -17,6 +17,7 @@ class PlikZAdresatami : public PlikTekstowy {
 
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     Adresat pobierzDaneAdresata(string daneJednegoAdresataOddzielonePionowymiKreskami);
+    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     void usunPlik();
     void zmienNazwePliku();
     void pobierzZPlikuIdOstatniegoAdresata();
@@ -28,9 +29,8 @@ public:
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
     int pobierzIdOstatniegoAdresata();
     void ustawIdOstatniegoAdresata(int idUsuwanegoAdresata);
-    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     void usunWybranegoAdresataZPliku(int idAdresata);
-    void edytujWybranegoAdresataWPliku(Adresat adresat, string liniaZDanymiAdresata);
+    void edytujWybranegoAdresataWPliku(Adresat adresat);
 };
 
 #endif // PLIKZADRESATAMI_H

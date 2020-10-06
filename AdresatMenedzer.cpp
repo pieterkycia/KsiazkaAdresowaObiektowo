@@ -211,9 +211,7 @@ void AdresatMenedzer::edytujAdresata() {
 void AdresatMenedzer::zaktualizujDaneWybranegoAdresata(Adresat adresat) {
     string liniaZDanymiAdresata = "";
 
-    liniaZDanymiAdresata = plikZAdresatami.zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);
-    plikZAdresatami.edytujWybranegoAdresataWPliku(adresat, liniaZDanymiAdresata);
-
+    plikZAdresatami.edytujWybranegoAdresataWPliku(adresat);
     cout << endl << "Dane zostaly zaktualizowane." << endl << endl;
 }
 
