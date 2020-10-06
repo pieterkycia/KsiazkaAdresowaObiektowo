@@ -2,11 +2,7 @@
 #define PLIKTEKSTOWY_H
 
 #include <iostream>
-#include <vector>
 #include <fstream>
-
-#include "Adresat.h"
-#include "MetodyPomocnicze.h"
 
 using namespace std;
 
